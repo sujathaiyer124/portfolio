@@ -1,0 +1,359 @@
+*{
+    box-sizing: border-box;
+    border:10px;
+}
+body{
+    background-color: rgb(0, 0, 33);
+
+}
+html {
+    scroll-behavior: smooth; /* This enables smooth scrolling when clicking on anchor links */
+}
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    height:100px;
+    color:white;
+    background-color: rgb(18,18,62);
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+nav ul li a {
+       text-decoration: none;
+       color: white;
+    } 
+    nav ul li a:hover{
+        color:rgb(93, 93, 228);
+        font: size 1rem;
+     } 
+
+nav ul li {
+    list-style:none;
+    margin: 0 23px;
+} 
+.left{
+    font-size: 1.5rem;
+}
+.home{
+    display:flex;
+    justify-content: space-around;
+    margin:180px 0;
+    align-items: center;
+}
+.home > div{
+    width: 30%;
+
+}
+.leftSection{
+    font-size: 3rem;
+    color:white;
+   
+}
+
+.rightSection img {
+   width:80%;
+   margin:50px 0;
+}
+.purple{
+    color:  rgb(170, 107, 228);
+}
+#element{
+    color: rgb(170, 107, 228);
+}
+.about{
+    color:white;
+    max-width: 80vw;
+    margin:auto;
+    height:80vh;
+    padding:60px 20px;
+    margin-bottom:60px;
+}
+main hr{
+    border:0;
+    background: #9c97f1;
+    height:1.3px;
+    margin:40px 84px;
+}
+hr{
+    border: none;
+    height: 2px;
+    background-color: #ffffff; 
+    margin: 40px 0; 
+    width: 100%; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* General about section styles */
+.about {
+    
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 900px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    line-height: 1.6;
+}
+
+/* Heading styles for about section */
+.h1about {
+    font-size: 2.2rem;
+    color: #2980b9; /* Darker shade for heading */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Subheading styles */
+.h2about {
+    font-size: 1.5rem;
+    color: #2980b9; /* Accent color for expertise subheading */
+    margin: 30px 0 15px;
+}
+
+/* Paragraph styles */
+.about p {
+    font-size: 1rem;
+    color: white; /* Medium gray for better readability */
+    margin-bottom: 15px;
+    text-align: justify; /* Better text alignment for longer content */
+}
+
+/* Skills list styles */
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.skills-list li {
+    background-color: #e8f5e9; /* Light green background for skill items */
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #2c3e50; /* Dark grayish-blue text */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
+.projects-h1{
+    font-size:2rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.projects{
+    padding: 60px 20px;
+    margin-top:60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+ /* Container for project cards with grid layout for 3 cards per row */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensures 3 cards per row with responsive behavior */
+    gap: 20px; /* Space between the cards */
+    margin: 20px 0;
+    padding: 20px;
+}
+
+/* Individual project card styles */
+.project-card {
+    background-color: #b2ebf2; 
+    /* Light mint-green */
+    color: #2c3e50; /* Dark grayish-blue text */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Slightly darker shadow on hover */
+    background-color: #96edb0; /* Bright yellow-gold for hover */
+}
+
+.project-card h3 {
+    font-size: 20px;
+    color: #65b4d8; /* Darker gray-blue for titles */
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #546e7a; /* Medium gray for description */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* Button Styles */
+.project-card a {
+    text-decoration: none;
+    color: white; /* Dark grayish-blue for button text */
+    background-color: #4057c9; /* Light yellow for button */
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    margin-top: 12px; /* Space between content and button */
+}
+
+.project-card a:hover {
+    background-color: #81c784; /* Darker gold for hover */
+    color: #ffffff; /* White text on hover for better readability */
+}
+.contacth2{
+    font-size: 2.2rem;
+    color: white; /* Darker shade for heading */
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+.contact-details{
+    display: flex;
+    padding: 0;
+    margin:0;
+    gap:25px;
+}
+.contact-details li {
+   padding :10px;
+   border-radius: 5px;  
+}
+.contact-details ul {
+    display: flex;
+    justify-content: center;
+}
+.contact-details ul li a{
+    text-decoration: none;      /* Remove underline from links */
+    color: white;               /* Text color */
+    display: flex;              /* Make anchor tag use flex for alignment */
+    align-items: center;        /* Center icon and text vertically */
+    gap: 5px;          
+}
+.icon {
+    font-size: 2rem;        
+    transition: color 0.3s; 
+}
+
+.icon:hover {
+    color: #0077b5; /* Change color on hover (example: LinkedIn blue) */
+    cursor: pointer;
+}  
+.contact-details ul li a{
+    text-decoration: none;
+    color: white;  
+} 
+/* For mobile users */
+@media only screen and (max-width: 600px) {
+
+
+    nav ul {
+      display: flex;
+        flex-direction: row;  /* Horizontal layout for items */
+        justify-content: center;
+        align-items: center;     /* Center items */
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Add space between items */
+        padding: 5px;
+    }
+
+    .home {
+        flex-direction: column; /* Stack sections vertically */
+        margin: 100px 0; /* Adjust margins */
+    }
+
+    .home > div {
+        width: 80%; /* Reduce the width on mobile */
+        margin-bottom: 20px;
+    }
+
+    .leftSection {
+        font-size: 2rem; /* Adjust font size */
+    }
+
+    .rightSection img {
+        width: 100%; /* Make images responsive */
+        margin: 0;
+    }
+    hr {
+        width: 100%;        
+        margin: 0;          
+        padding: 0;          
+        border: none;       
+        border-top: 2px solid #ffffff; 
+        box-sizing: border-box; 
+       
+    }
+     .about {
+        width:100%;
+        padding: 20px;
+      
+    }
+
+    .about h1 {
+        font-size: 1.8rem;
+    }
+
+    .about p {
+        font-size: 0.9rem; /* Smaller text for better readability on small screens */
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr; /* Stack the cards vertically on mobile */
+    }
+
+    .project-card {
+        width: 100%; /* Ensure project cards take up full width */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .project-card h3 {
+        font-size: 18px; /* Smaller font size for better readability */
+    }
+
+    .contact-us {
+        padding: 5px;
+    }
+
+    .contact-details {
+        flex-direction: column; /* Stack contact items vertically on mobile */
+        align-items: center; /* Center the items */
+    }
+
+    .contact-details li {
+        margin-bottom: 10px; /* Space between items */
+    }
+
+    .contact-details ul {
+        flex-direction: column; /* Stack the icons vertically */
+        align-items: center;
+    }
+
+    .contact-details ul li a {
+        font-size: 1.2rem; /* Smaller font size for mobile */
+    }
+}
+
